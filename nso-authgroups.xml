@@ -5,8 +5,7 @@
         <name>pnp</name>
         <default-map>
           <remote-name>admin</remote-name>
-          <remote-password>$9$HZzzEpRF8LjNPP5z5fS5sTs8ZOnQ2cUL9ap4uLPxsJo=</remote-password>
-          <remote-secondary-password>$9$ZwVj5XkgVXx7l+IdZ6HT+alX9Lta+Wt30D7whZ2GU+4=</remote-secondary-password>
+          <remote-password>admin</remote-password>
         </default-map>
       </group>
     </authgroups>
