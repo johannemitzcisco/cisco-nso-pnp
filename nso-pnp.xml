@@ -1,0 +1,26 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <pnp xmlns="http://cisco.com/ns/nso/cfp/pnp">
+    <day0-common>
+      <cfgName>test.config</cfgName>
+    </day0-common>
+    <logging>
+      <serial>
+        <name>all</name>
+      </serial>
+    </logging>
+    <host-key-verification-type>none</host-key-verification-type>
+    <cfg-location>/etc/ncs/</cfg-location>
+    <servers>
+      <name>pnp</name>
+      <server>
+        <ip-address>10.1.1.1</ip-address>
+        <port>80</port>
+        <use-ssl>false</use-ssl>
+        <verify-cpe-cert>false</verify-cpe-cert>
+      </server>
+      <state-value>
+        <backoff-timeout>20</backoff-timeout>
+      </state-value>
+    </servers>
+  </pnp>
+</config>
