@@ -1,0 +1,72 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+    <authgroups>
+      <group>
+        <name>pnp</name>
+        <default-map>
+          <remote-name>admin</remote-name>
+          <remote-password>$9$HZzzEpRF8LjNPP5z5fS5sTs8ZOnQ2cUL9ap4uLPxsJo=</remote-password>
+          <remote-secondary-password>$9$ZwVj5XkgVXx7l+IdZ6HT+alX9Lta+Wt30D7whZ2GU+4=</remote-secondary-password>
+        </default-map>
+      </group>
+    </authgroups>
+    <device>
+      <name>pnp</name>
+      <address>127.0.0.1</address>
+      <port>2022</port>
+      <ssh>
+        <host-key>
+          <algorithm>ssh-rsa</algorithm>
+          <key-data>AAAAB3NzaC1yc2EAAAADAQABAAABAQDHZrqwyXYen7LMf2IrQzo15nDrkCWtsXEw1xcHhY42
+MVvRH0Vv10VkUx0+Fks0+pJDC+O2joueMmQiYlhX8MUOIcG5URnkXdoQZP/Z2g9gR3xucDfu
+1qFwCIhtTksvr4NRgqUJOuNfXJNydOS1zyv7O3WVfXcGe5nS+P5sW0E8+ThuIMCDXUx8wbG0
+wupCX4pQlVta5ILo50oJNrwjPCPHZdkMEhleyFkdaeEsLoYzhxX1tCfVE+CeTgoPqJGkr52n
+gfDikMAH2+uoWjAHui9ZVlGwcIF+IGA3C7BHS439OflV/qpesX1lH1wt7qOtHDkGK900DObJ
+YOkeonBxR3LV</key-data>
+        </host-key>
+      </ssh>
+      <authgroup>pnp</authgroup>
+      <device-type>
+        <netconf>
+          <ned-id xmlns:confd-pnp-ned-nc-1.0="http://tail-f.com/ns/ned-id/confd-pnp-ned-nc-1.0">confd-pnp-ned-nc-1.0:confd-pnp-ned-nc-1.0</ned-id>
+        </netconf>
+      </device-type>
+      <state>
+        <admin-state>unlocked</admin-state>
+      </state>
+    </device>
+  </devices>
+  <nacm xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-acm">
+    <groups>
+      <group>
+        <name>ncsadmin</name>
+        <user-name>admin</user-name>
+        <user-name>private</user-name>
+      </group>
+    </groups>
+  </nacm>
+  <pnp xmlns="http://cisco.com/ns/nso/cfp/pnp">
+    <day0-common>
+      <cfgName>test.config</cfgName>
+    </day0-common>
+    <logging>
+      <serial>
+        <name>all</name>
+      </serial>
+    </logging>
+    <host-key-verification-type>none</host-key-verification-type>
+    <cfg-location>/etc/ncs/</cfg-location>
+    <servers>
+      <name>pnp</name>
+      <server>
+        <ip-address>10.1.1.1</ip-address>
+        <port>80</port>
+        <use-ssl>false</use-ssl>
+        <verify-cpe-cert>false</verify-cpe-cert>
+      </server>
+      <state-value>
+        <backoff-timeout>20</backoff-timeout>
+      </state-value>
+    </servers>
+  </pnp>
+</config>
