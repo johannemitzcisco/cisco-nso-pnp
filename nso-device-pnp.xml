@@ -4,17 +4,6 @@
       <name>pnp</name>
       <address>127.0.0.1</address>
       <port>2022</port>
-      <ssh>
-        <host-key>
-          <algorithm>ssh-rsa</algorithm>
-          <key-data>AAAAB3NzaC1yc2EAAAADAQABAAABAQDHZrqwyXYen7LMf2IrQzo15nDrkCWtsXEw1xcHhY42
-MVvRH0Vv10VkUx0+Fks0+pJDC+O2joueMmQiYlhX8MUOIcG5URnkXdoQZP/Z2g9gR3xucDfu
-1qFwCIhtTksvr4NRgqUJOuNfXJNydOS1zyv7O3WVfXcGe5nS+P5sW0E8+ThuIMCDXUx8wbG0
-wupCX4pQlVta5ILo50oJNrwjPCPHZdkMEhleyFkdaeEsLoYzhxX1tCfVE+CeTgoPqJGkr52n
-gfDikMAH2+uoWjAHui9ZVlGwcIF+IGA3C7BHS439OflV/qpesX1lH1wt7qOtHDkGK900DObJ
-YOkeonBxR3LV</key-data>
-        </host-key>
-      </ssh>
       <authgroup>pnp</authgroup>
       <device-type>
         <netconf>
