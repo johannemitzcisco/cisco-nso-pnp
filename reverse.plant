@@ -1,0 +1,12 @@
+$TTL 86400
+@   IN  SOA     masterdns.unixmen.local. root.unixmen.local. (
+        2011071001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@       IN  NS          nso-cml.plant.local.
+@       IN  PTR         plant.local.
+nso-cml       IN  A   10.1.1.1
+1     IN  PTR         nso-cml.plant.local.
