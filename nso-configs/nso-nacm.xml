@@ -3,6 +3,7 @@
     <groups>
       <group>
         <name>ncsadmin</name>
+        <user-name>centos</user-name>
         <user-name>admin</user-name>
         <user-name>private</user-name>
       </group>
