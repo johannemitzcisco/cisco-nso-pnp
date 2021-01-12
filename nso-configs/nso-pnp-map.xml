@@ -1,6 +1,6 @@
 <config xmlns="http://tail-f.com/ns/config/1.0">
   <pnp xmlns="http://cisco.com/ns/nso/cfp/pnp">
-    <map>
+    <!-- map>
       <id>PlantRouter</id>
       <serial>9UH4SAP84GA</serial>
       <device-name>PlantRouter</device-name>
@@ -28,11 +28,11 @@
         </cfg-properties>
       </day0>
       <managed>true</managed>
-    </map>
+    </map -->
     <map>
-      <id>PlantSwitch</id>
-      <serial>9Z37D13ISL7</serial>
-      <device-name>PlantSwitch</device-name>
+      <id>PlantSwitch1</id>
+      <serial>9SYDD966CQF</serial>
+      <device-name>PlantSwitch1</device-name>
       <authgroup>plant</authgroup>
       <username>admin</username>
       <password>$8$sCE4DZNsx4sOOnAvyVt74f26gjaaaXR5KjpRqRz6SSE=</password>
@@ -48,7 +48,7 @@
           </variable>
           <variable>
             <name>HOSTNAME</name>
-            <value>PlantSwitch</value>
+            <value>PlantSwitch1</value>
           </variable>
           <variable>
             <name>DOMAIN</name>
@@ -60,7 +60,7 @@
     </map>
     <map>
       <id>PlantSwitch2</id>
-      <serial>9AL4MVH1DPZ</serial>
+      <serial>9CS5W0I95C8</serial>
       <device-name>PlantSwitch2</device-name>
       <authgroup>plant</authgroup>
       <username>admin</username>
@@ -78,6 +78,35 @@
           <variable>
             <name>HOSTNAME</name>
             <value>PlantSwitch2</value>
+          </variable>
+          <variable>
+            <name>DOMAIN</name>
+            <value>plant.local</value>
+          </variable>
+        </cfg-properties>
+      </day0>
+      <managed>true</managed>
+    </map>
+    <map>
+      <id>PlantSwitch3</id>
+      <serial>9HAXOWEO22A</serial>
+      <device-name>PlantSwitch3</device-name>
+      <authgroup>plant</authgroup>
+      <username>admin</username>
+      <password>$8$sCE4DZNsx4sOOnAvyVt74f26gjaaaXR5KjpRqRz6SSE=</password>
+      <device-type>cli</device-type>
+      <ned-id>cisco-ios-cli-6.53</ned-id>
+      <port>22</port>
+      <day0>
+        <day0-file>iosv.config</day0-file>
+        <cfg-properties>
+          <variable>
+            <name>MGMT_IP_ADDRESS</name>
+            <value>10.1.1.103</value>
+          </variable>
+          <variable>
+            <name>HOSTNAME</name>
+            <value>PlantSwitch3</value>
           </variable>
           <variable>
             <name>DOMAIN</name>

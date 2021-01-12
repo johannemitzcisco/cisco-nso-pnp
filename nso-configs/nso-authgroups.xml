@@ -8,6 +8,13 @@
           <remote-password>admin</remote-password>
         </default-map>
       </group>
+      <group>
+        <name>plant</name>
+        <default-map>
+          <remote-name>admin</remote-name>
+          <remote-password>cisco123</remote-password>
+        </default-map>
+      </group>
     </authgroups>
   </devices>
 </config>
